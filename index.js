@@ -15,11 +15,11 @@ const replaceTemplate = (temp, product) => {
     return output;
 }
 
-const tempOverview = fs.readFileSync(`${__dirname}/templates/template-overview.html`, `utf-8`);
-const tempCard = fs.readFileSync(`${__dirname}/templates/template-card.html`, `utf-8`);
-const tempProduct = fs.readFileSync(`${__dirname}/templates/template-product.html`, `utf-8`);
+const tempOverview = fs.readFileSync(`${__dirname}/template-overview.html`, `utf-8`);
+const tempCard = fs.readFileSync(`${__dirname}/template-card.html`, `utf-8`);
+const tempProduct = fs.readFileSync(`${__dirname}/template-product.html`, `utf-8`);
 
-const data = fs.readFileSync(`${__dirname}/dev-data/data.json`, `utf-8`);
+const data = fs.readFileSync(`${__dirname}/data.json`, `utf-8`);
 const dataObj = JSON.parse(data);
 const server = http.createServer((req, res) => {
     const {query, pathname} = url.parse(req.url, true);
