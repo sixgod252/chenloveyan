@@ -8,7 +8,8 @@
   </title>
   <style>
     .heartPic {
-      margin-top: 20px;
+      margin-top: 30px;
+      position: relative;
     }
     ul {
       list-style-type:none;
@@ -17,46 +18,90 @@
       margin: 0;
     }
     li {
-      width: 100px;
-      height: 100px;
+      width: 110px;
+      height: 110px;
     }
-    video {
+    #bg{
       position: fixed;
       min-width: 100%;
       min-height: 100%;
+      min-height: 100%;
       right: 0;
-      bottom: 0;
-      z-index: -1;
+      top: 0;
+      z-index: -99;
+      filter: blur(5px);
+    }
+    .in img {
+      position: relative;
+      box-shadow: 2px 2px 5px;
+      border-radius: 10px;
+    }
+    
+    #button {
+      width: 500px;
+      position: relative;
+      left: 50%;
+      translate: -50%;
+      text-align: center;
+    }
+    #next {
+      height: 50px;
+    }
+
+    #up {
+      height: 50px;
+      width: 100px;
+    }
+    
+    #button button {
+      height: 50px;
+      background:linear-gradient(45deg,rgb(199, 239, 255),rgb(255, 211, 255));
+      border-radius: 10px;
+      font-size: large;
+      font-weight: bold;
+      color: white;
+      text-shadow:
+      0px 0px 3px #848484,
+      0px 0px 3px #505050,
+      0px 0px 5px #343434;
+    }
+    #button button:hover {
+      transform: scale(1.1);
+      transition-duration: .3s;
+    }
+    video {
+      display: none;
     }
   </style>
 </head>
 
 <body>
-  <video src="./video1.mp4" loop="loop" muted="muted" autoplay="autoplay"></video>
+  <video autoplay="true" name="media" loop="true" controls="controls"> <source src="./music/waybackhome.mp3" type="audio/mpeg"></video>
+  <img id="bg" src="./picture/flower.jpg">
   <div class="heartPic">
     <ul>
       <li>
       </li>
       <li>
         <div class="in">
-          <img width="100" height="100" src="/jscss/demoimg/201404/index_01.jpg" />
+          <img width="100px" height="100px" src="./picture/1.jpg" />
         </div>
       </li>
       <li>
         <div class="in">
-          <img width="100" height="100" src="/jscss/demoimg/201404/index_02.jpg" />
+          <img width="100px" height="100px" src="./picture/2.jpg" />
         </div>
       </li>
       <li>
       </li>
       <li>
         <div class="in">
-          <img width="100" height="100" src="/jscss/demoimg/201404/index_03.jpg" />
+          <img width="100px" height="100px" src="./picture/3.jpg" />
         </div>
       </li>
       <li>
         <div class="in">
-          <img width="100" height="100" src="/jscss/demoimg/201404/index_04.jpg" />
+          <img width="100px" height="100px" src="./picture/4.jpg" />
         </div>
       </li>
       <li>
@@ -65,74 +110,74 @@
     <ul>
       <li>
         <div class="in">
-          <img width="100" height="100" src="/jscss/demoimg/201404/index_05.jpg" />
+          <img width="100px" height="100px" src="./picture/5.jpg" />
         </div>
       </li>
       <li>
         <div class="in">
-          <img width="100" height="100" src="/jscss/demoimg/201404/index_06.jpg" />
+          <img width="100px" height="100px" src="./picture/6.jpg" />
         </div>
       </li>
       <li>
         <div class="in">
-          <img width="100" height="100" src="/jscss/demoimg/201404/index_07.jpg" />
+          <img width="100px" height="100px" src="./picture/7.jpg" />
         </div>
       </li>
       <li>
         <div class="in">
-          <img width="100" height="100" src="/jscss/demoimg/201404/index_08.jpg" />
+          <img width="100px" height="100px" src="./picture/8.jpg" />
         </div>
       </li>
       <li>
         <div class="in">
-          <img width="100" height="100" src="/jscss/demoimg/201404/index_09.jpg" />
+          <img width="100px" height="100px" src="./picture/9.jpg" />
         </div>
       </li>
       <li>
         <div class="in">
-          <img width="100" height="100" src="/jscss/demoimg/201404/index_10.jpg" />
+          <img width="100px" height="100px" src="./picture/10.jpg" />
         </div>
       </li>
       <li>
         <div class="in">
-          <img width="100" height="100" src="/jscss/demoimg/201404/index_11.jpg" />
+          <img width="100px" height="100px" src="./picture/11.jpg" />
         </div>
       </li>
     </ul>
     <ul>
       <li>
         <div class="in">
-          <img width="100" height="100" src="/jscss/demoimg/201404/index_12.jpg" />
+          <img width="100px" height="100px" src="./picture/12.jpg" />
         </div>
       </li>
       <li>
         <div class="in">
-          <img width="100" height="100" src="/jscss/demoimg/201404/index_13.jpg" />
+          <img width="100px" height="100px" src="./picture/13.jpg" />
         </div>
       </li>
       <li>
         <div class="in">
-          <img width="100" height="100" src="/jscss/demoimg/201404/index_14.jpg" />
+          <img width="100px" height="100px" src="./picture/14.jpg" />
         </div>
       </li>
       <li>
         <div class="in">
-          <img width="100" height="100" src="/jscss/demoimg/201404/index_15.jpg" />
+          <img width="100px" height="100px" src="./picture/15.jpg" />
         </div>
       </li>
       <li>
         <div class="in">
-          <img width="100" height="100" src="/jscss/demoimg/201404/index_16.jpg" />
+          <img width="100px" height="100px" src="./picture/16.jpg" />
         </div>
       </li>
       <li>
         <div class="in">
-          <img width="100" height="100" src="/jscss/demoimg/201404/index_17.jpg" />
+          <img width="100px" height="100px" src="./picture/17.jpg" />
         </div>
       </li>
       <li>
         <div class="in">
-          <img width="100" height="100" src="/jscss/demoimg/201404/index_18.jpg" />
+          <img width="100px" height="100px" src="./picture/18.jpg" />
         </div>
       </li>
     </ul>
@@ -141,53 +186,28 @@
       </li>
       <li>
         <div class="in">
-          <img width="100" height="100" src="/jscss/demoimg/201404/index_19.jpg" />
+          <img width="100px" height="100px" src="./picture/19.jpg" />
         </div>
       </li>
       <li>
         <div class="in">
-          <img width="100" height="100" src="/jscss/demoimg/201404/index_20.jpg" />
+          <img width="100px" height="100px" src="./picture/20.jpg" />
         </div>
       </li>
       <li>
         <div class="in">
-          <img width="100" height="100" src="/jscss/demoimg/201404/index_21.jpg" />
+          <img width="100px" height="100px" src="./picture/21.jpg" />
         </div>
       </li>
       <li>
         <div class="in">
-          <img width="100" height="100" src="/jscss/demoimg/201404/index_22.jpg" />
+          <img width="100px" height="100px" src="./picture/22.jpg" />
         </div>
       </li>
       <li>
         <div class="in">
-          <img width="100" height="100" src="/jscss/demoimg/201404/index_23.jpg" />
+          <img width="100px" height="100px" src="./picture/23.jpg" />
         </div>
-      </li>
-      <li>
-      </li>
-    </ul>
-    <ul>
-      <li>
-      </li>
-      <li>
-      </li>
-      <li>
-        <div class="in">
-          <img width="100" height="100" src="/jscss/demoimg/201404/index_24.jpg" />
-        </div>
-      </li>
-      <li>
-        <div class="in">
-          <img width="100" height="100" src="/jscss/demoimg/201404/index_25.jpg" />
-        </div>
-      </li>
-      <li>
-        <div class="in">
-          <img width="100" height="100" src="/jscss/demoimg/201404/index_26.jpg" />
-        </div>
-      </li>
-      <li>
       </li>
       <li>
       </li>
@@ -198,10 +218,35 @@
       <li>
       </li>
       <li>
+        <div class="in">
+          <img width="100px" height="100px" src="./picture/24.jpg" />
+        </div>
       </li>
       <li>
         <div class="in">
-          <img width="100" height="100" src="/jscss/demoimg/201404/index_27.jpg" />
+          <img width="100px" height="100px" src="./picture/25.jpg" />
+        </div>
+      </li>
+      <li>
+        <div class="in">
+          <img width="100px" height="100px" src="./picture/26.jpg" />
+        </div>
+      </li>
+      <li>
+      </li>
+      <li>
+      </li>
+    </ul>
+    <ul>
+      <li>
+      </li>
+      <li>
+      </li>
+      <li>
+      </li>
+      <li>
+        <div class="in">
+          <img width="100px" height="100px" src="./picture/27.jpg" />
         </div>
       </li>
       <li>
@@ -212,9 +257,36 @@
       </li>
     </ul>
   </div>
-
-  <div style="text-align:center;clear:both">
+  <div id="button">
+      <button id="up">首页</button>
+      <button id="next">再看看别的⇨</button>
   </div>
+<script>
+  var  img = document.querySelectorAll(".in img");
+    img.forEach(element => {
+    element.addEventListener("mouseover", function() {
+      element.style.height="150px";
+      element.style.width="150px";
+      element.style.zIndex="1";
+    })
+    element.addEventListener("mouseout", function() {
+      element.style.height="100px";
+      element.style.width="100px";
+      element.style.zIndex="0";
+    })
+    function nextPage(){
+      window.location.href="words.html";
+    }
+    document.querySelector("#next").addEventListener("click",function(){
+      nextPage();
+    });
+    function headPage(){
+      window.location.href="index.html";
+    }
+    document.querySelector("#up").addEventListener("click",function(){
+      headPage();
+    });
+  });
+</script>
 </body>
-
 </html>
