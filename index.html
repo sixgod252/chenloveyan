@@ -112,7 +112,7 @@
     </style>
 </head>
 <body>
-    <video autoplay="true" name="media" loop="true" controls="controls"> <source src="./music/canwekissforever.mp3" type="audio/mpeg"></video>
+    <audio autoplay="autoplay" loop="loop" src="./music/canwekissforever.mp3"></audio>
     <div class="bg"></div>
     <div class="form">
         <div id="img">
@@ -155,12 +155,6 @@
         element.style.width="100px";
         })
     })
-    
-    var preloadAnotherPage = function () { var link = document.createElement (“link”); 
-        link.rel = “preload”; link.as = “document”; 
-        link.href = “heart.html”; 
-        document.head.appendChild (link); 
-    }
-    window.onload = preloadAnotherPage; 
+
 </script>
 </html>
