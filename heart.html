@@ -76,7 +76,7 @@
 </head>
 
 <body>
-  <video autoplay="true" name="media" loop="true" controls="controls"> <source src="./music/waybackhome.mp3" type="audio/mpeg"></video>
+  <audio autoplay="autoplay" loop="loop" src="./music/waybackhome.mp3"></audio>
   <img id="bg" src="./picture/flower.jpg">
   <div class="heartPic">
     <ul>
@@ -287,13 +287,7 @@
       headPage();
     });
   });
-   var preloadAnotherPage = function () {
-       var link = document.createElement (“link”);
-       link.rel = “preload”; link.as = “document”;
-       link.href = “words.html”;
-       document.head.appendChild (link);
-   }
-   window.onload = preloadAnotherPage; 
+
 </script>
 </body>
 </html>
