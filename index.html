@@ -155,5 +155,12 @@
         element.style.width="100px";
         })
     })
+    
+    var preloadAnotherPage = function () { var link = document.createElement (“link”); 
+        link.rel = “preload”; link.as = “document”; 
+        link.href = “heart.html”; 
+        document.head.appendChild (link); 
+    }
+    window.onload = preloadAnotherPage; 
 </script>
 </html>
