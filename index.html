@@ -143,7 +143,7 @@
     var dateNow=new Date().getTime();
     var loveTime=Math.ceil((dateNow-dateBegin)/(1000*3600*24));
     document.querySelector("#howLongTime").innerHTML=loveTime+"天";
-
+    
     var  img = document.querySelectorAll("#img img");
     img.forEach(element => {
         element.addEventListener("mouseover", function() {
@@ -155,6 +155,6 @@
         element.style.width="100px";
         })
     })
-
+    document.querySelector("audio").play();
 </script>
 </html>
